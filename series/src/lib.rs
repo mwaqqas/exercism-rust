@@ -7,6 +7,6 @@ pub fn series(digits: &str, len: usize) -> Vec<String> {
         .chars()
         .collect::<Vec<char>>()
         .windows(len)
-        .map(|c| c.iter().collect::<String>())
+        .map(|slice| slice.iter().collect::<String>())
         .collect::<Vec<String>>()
 }
